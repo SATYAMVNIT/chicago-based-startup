@@ -79,7 +79,6 @@ print(trip_data['rideable_type'])
 
 
 # Now we need to separately create columns for months, year, day and day of the week:
-
 trip_data['months'] = pd.to_datetime(trip_data['started_at']).dt.strftime('%m')
 trip_data['year'] = pd.to_datetime(trip_data['started_at']).dt.strftime('%Y')
 trip_data['day'] = pd.to_datetime(trip_data['started_at']).dt.strftime('%d')
